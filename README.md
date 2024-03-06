@@ -21,5 +21,5 @@ This is my personal portfolio website that I created using HTML, CSS, and JavaSc
 ##Clone the repository:
 
     ```bash
-    git clone https://github.com/Pratham-verma/Portfolio.git
-    ```
+   [ git clone https://github.com/Pratham-verma/Portfolio.git](https://github.com/Pratham-verma/Portfolio.git)https://github.com/Pratham-verma/Portfolio.git
+    
