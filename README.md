@@ -22,4 +22,4 @@ This is my personal portfolio website that I created using HTML, CSS, and JavaSc
 
     ```bash
     https://github.com/Pratham-verma/Portfolio.git
-    
+    ```  
