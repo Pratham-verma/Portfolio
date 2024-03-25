@@ -18,8 +18,7 @@ This is my personal portfolio website that I created using HTML, CSS, and JavaSc
   
 ## Installation
 
-##Clone the repository:
-
-    ```bash
+## Clone the repository:
+ 
     https://github.com/Pratham-verma/Portfolio.git
-    ```  
+
