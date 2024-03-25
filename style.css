@@ -391,17 +391,6 @@ article .icon{
     height: 100%;
 }
 
-.experience-container{
-    padding-left: calc(30% - 10px);
-    padding-right: calc(30% - 10px);;
-}
-
-main.row{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-} 
-
  .col header.title3{
     font-family: helvetica;
     padding: 0px 0px 20px 30px;
@@ -414,7 +403,7 @@ main.row{
 
 .col .contents .box {
     position: relative;
-    width: 300px;
+    width: 600px;
     height: 200px;
     padding: 20px;
     border: 1px solid #eaeaea;
