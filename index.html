@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,317 +8,312 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
 
     <!-- desktop-nav -->
     <nav id="desktop-nav">
-       <div class="logo">Pratham Verma.</div>
-       <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="logo">Pratham Verma.</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
 
-        </ul>
-       </div>
+            </ul>
+        </div>
     </nav>
 
     <!-- hamburger-nav -->
     <nav id="hamburger-nav">
         <div class="logo">Pratham Verma</div>
-    <div class="hamburger-menu">
+        <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+                <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#skills"  onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#experience"  onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </div>
     </nav>
 
     <!-- profile -->
     <section id="profile">
         <div class="section__pic-container">
-             <img src = "./assets/Profile.png" alt="Profile Picture">
+            <img src="./assets/Profile.png" alt="Profile Picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Pratham Verma</h1>
-            <p class="section__text__p2">Security Engineer</p>
+            <p class="section__text__p2">Aspiring Security Engineer</p>
             <div class="btn-container">
-                <button 
-                 class ="btn btn-color-2"
-                 onclick="window.open('./assets/Pratham_Verma_Resume.pdf')"
-                >Download CV
-            </button>
-            <button 
-                 class ="btn btn-color-1"
-                 onclick="location.href ='./#contact'"
-                >Contact Info
-            </button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Pratham_verma_cv.pdf')">Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info
+                </button>
             </div>
             <div id="socials-container">
-                <img
-                  src="./assets/linkedin.png"
-                  alt="Linkedin Profile"
-                  class="icon"
-                  onclick="window.open('https://www.linkedin.com/in/pratham-verma-7685b8220/', '_blank');"
-                />    
-                <img
-                  src="./assets/github.png"
-                  alt="Linkedin Profile"
-                  class="icon"
-                  onclick="window.open('https://github.com/Pratham-verma', '_blank');"
-                /> 
+                <img src="./assets/linkedin.png" alt="Linkedin Profile" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/pratham-verma-7685b8220/', '_blank');" />
+                <img src="./assets/github.png" alt="Linkedin Profile" class="icon"
+                    onclick="window.open('https://github.com/Pratham-verma', '_blank');" />
             </div>
         </div>
     </section>
 
     <!-- about -->
-    <section id = "about">
-        <p class ="section__text__p1">Get To Know More</p>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
         <h1 class="title2">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container2">
-                <img src="./assets/back.png" alt="Picture"
-                class="about-pic"
-                />
+                <img src="./assets/back.png" alt="Picture" class="about-pic" />
             </div>
             <div class="about-details-container">
                 <div class="about-container">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt ="experience icon" 
-                        class="icon" 
-                        />
+                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
                         <h3>Experience</h3>
                         <p>1+ years</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt ="education icon" 
-                        class="icon" 
-                        />
+                        <img src="./assets/education.png" alt="education icon" class="icon" />
                         <h3>Education</h3>
                         <p>Galgotias University</p>
                         <p>B.Tech Computer Science <br />2022-2026</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt ="experience icon" 
-                        class="icon" 
-                        />
+                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
                         <h3>Projects</h3>
-                        <p>2+ Projects</p>
+                        <p>4+ Projects</p>
                     </div>
                 </div>
-                <div class ="text-container">
+                <div class="text-container">
                     <p>
-                        I am an aspiring Security Engineer with a passion for cybersecurity
-                        and expand my expertise in the software and IT fields. particularly focusing on web security and network security.
-                        I strive to contribute effectively to securing digital environments. <mark style="background-color: whitesmoke;">Let Secure a Future Together</mark>
+                    <p></p>
+                    Aspiring Security Engineer with a passion for cybersecurity and expand my expertise in the software
+                    and IT fields.
+                    particularly focusing on web security and network security.
+                    </p>
+                    <p>
+                        My journey also includes contributing to cybersecurity knowledge through blogs, speaking at
+                        events like DevFest 2k24, and excelling in hackathons, highlighting my commitment to innovation
+                        and continuous learning.
                     </p>
                 </div>
             </div>
-        </div>
-        <img src ="./assets/arrow.png" alt="arrow icon"
-         class="icon arrow"
-         onclick="location.href='./#skills'" 
-        />
+            <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
     </section>
 
     <!-- skills  -->
+    <!-- Skills Section HTML -->
     <section id="skills">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title2">Skills</h1>
-        <div class="skills-details-container">
-            <div class="about-container">
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Technology and Tools</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Web-App Security</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Network Security</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Owasp Top 10</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Burpsuite</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Nmap</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Wireshark</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Metasploit</h4>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Linux OS</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>                    
-                    </div>
+        <div class="skills__container">
+            <div class="skill__category">
+                <div class="skill__title">
+                    <h2>Security</h2>
                 </div>
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Other Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Java</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>C++</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>Python</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>DSA</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>SQL</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h4>GitHub</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>                      
-                    </div>
+                <div class="skill__list">
+                    <div class="skill__item">Web Application Security</div>
+                    <div class="skill__item">OWASP Top 10</div>
+                    <div class="skill__item">Secure Coding Practice</div>
+                    <div class="skill__item">Penetration Testing</div>
+                </div>
+            </div>
+
+            <div class="skill__category">
+                <div class="skill__title">
+                    <h2>Networking</h2>
+                </div>
+                <div class="skill__list">
+                    <div class="skill__item">Computer Networking</div>
+                    <div class="skill__item">Network Traffic Analysis</div>
+                    <div class="skill__item">Network Security</div>
+                </div>
+            </div>
+
+            <div class="skill__category">
+                <div class="skill__title">
+                    <h2>Programming</h2>
+                </div>
+                <div class="skill__list">
+                    <div class="skill__item">Python</div>
+                    <div class="skill__item">Java</div>
+                    <div class="skill__item">C++</div>
+                    <div class="skill__item">Data Structures & Algorithms</div>
+                </div>
+            </div>
+
+            <div class="skill__category">
+                <div class="skill__title">
+                    <h2>Tools & Platforms</h2>
+                </div>
+                <div class="skill__list">
+                    <div class="skill__item">Linux OS</div>
+                    <div class="skill__item">Git/GitHub</div>
+                    <div class="skill__item">Burp Suite</div>
+                    <div class="skill__item">Nmap</div>
+                    <div class="skill__item">Wireshark</div>
+                    <div class="skill__item">Gobuster</div>
+                    <div class="skill__item">OWASP ZAP</div>
                 </div>
             </div>
         </div>
-        <img src ="./assets/arrow.png" alt="arrow icon"
-         class="icon arrow"
-         onclick="location.href='./#experience'" 
-        />
     </section>
-   <script src="script.js"></script>
 
-   <!-- experience  -->
-   <section id="experience">
-     <div class="experience-container">
-        <p class ="section__text__p1">Get To Know</p>
-        <h1 class="title2">My Expertise</h1>
-        <main class ="row">
-
-             <!-- Experience Section starts  -->
-            <section class="col">
-                <header class="title3">
-                </header>
-                <div class="contents">
-
-                    <div class="box">
-                        <h4>Nov 2023 - Present</h4>
-                        <h3>Web Security - Apprenticeship</h3>
-                        <h4>Portswigger</h4>
-                        <p>Gaining hands-on experience , comprehensive training in identifying and mitigating web vulnerabilities.
-                           Skills - Owasp Top 10 , Web Security , Vulnerability Assessment.</p>
-                    </div>
-
-                    <div class="box">
-                        <h4>Sep 2023 - Oct 2023</h4>
-                        <h3>Cyber Security Intern</h3>
-                        <h4>Senselearner Technologies Pvt.Ltd</h4>
-                        <p> Opportunity to gain valuable hand on experience and work on real world projects.
-                            Skills - All phase of ethical hacking , Chance to investigate multiples website and Report writing. 
-                        </p>
-                    </div>
-                 
+    <!-- Experience Section HTML -->
+    <section id="experience">
+        <p class="section__text__p1">Get To Know</p>
+        <h1 class="title2">My Experience</h1>
+        <div class="experience__container">
+            <div class="experience__box">
+                <div class="experience__content">
+                    <span class="experience__date">Sep 2023 - Oct 2023</span>
+                    <h3 class="experience__title">Cyber Security Intern</h3>
+                    <h4 class="experience__company">Senselearner Technologies Pvt.Ltd</h4>
+                    <ul class="experience__description">
+                        <li>Conducted comprehensive ethical hacking methodologies</li>
+                        <li>Identified and reducing potential security breaches by 60%</li>
+                        <li>Utilized industry-standard tools to improve overall security posture by 60%</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-        </main>
-    </div>
-   </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title2">Projects</h1>
+        <div class="slider-container">
+            <button class="slide-arrow prev-arrow" onclick="slideProjects(-1)">&#8249;</button>
+            <div class="projects-slider" id="projectsSlider">
+                <div class="project-card">
+                    <img src="./assets/digital-signature.jpg" alt="Digital Signature Project">
+                    <h3>Digital Signature Verification</h3>
+                    <p>A secure system for verifying digital signatures using cryptographic algorithms.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/your-repo/digital-signature" target="_blank">GitHub</a>
+                        <a href="#" class="demo-link">Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./assets/medical-records.jpg" alt="Medical Records Project">
+                    <h3>Blockchain Based Medical Record Portal</h3>
+                    <p>Secure and decentralized medical record management system using blockchain technology.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/your-repo/medical-records" target="_blank">GitHub</a>
+                        <a href="#" class="demo-link">Live Demo</a>
+                    </div>
+                </div>
+        
+                <div class="project-card">
+                    <img src="./assets/firewall.jpg" alt="Web Application Firewall">
+                    <h3>Web Application Firewall</h3>
+                    <p>Custom WAF implementation for protecting web applications from common security threats.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/your-repo/web-firewall" target="_blank">GitHub</a>
+                        <a href="#" class="demo-link">Live Demo</a>
+                    </div>
+                </div>
+        
+                <div class="project-card">
+                    <img src="./assets/chat-app.jpg" alt="Chat Application">
+                    <h3>Server-client based chat application</h3>
+                    <p>Real-time chat application with end-to-end encryption and secure communication.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/your-repo/chat-app" target="_blank">GitHub</a>
+                        <a href="#" class="demo-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slide-arrow next-arrow" onclick="slideProjects(1)">&#8250;</button>
+        </div>
+    </section>
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <p class="section__text__p1">Check Out My</p>
+            <h1 class="title2">Achievements</h1>
+            <div class="achievements-slider">
+                <div class="achievement-card">
+                    <img src="./assets/devfest.jpg" alt="DevFest Speaker">
+                    <h3>Speaker at DevFest 2k24</h3>
+                    <p>Delivered a talk on cybersecurity best practices and emerging threats.</p>
+                </div>
+    
+                <div class="achievement-card">
+                    <img src="./assets/hackathon.jpg" alt="Hackathon Winner">
+                    <h3>Hackathon Winner</h3>
+                    <p>First place in cybersecurity hackathon with innovative security solution.</p>
+                </div>
+    
+                <div class="achievement-card">
+                    <img src="./assets/certification.jpg" alt="Security Certification">
+                    <h3>Security Certifications</h3>
+                    <p>Achieved multiple industry-recognized security certifications.</p>
+                </div>
+            </div>
+        </section>
 
+    <!-- Blogs Section -->
+    <section id="blogs">
+        <p class="section__text__p1">Read My</p>
+        <h1 class="title2">Latest Blogs</h1>
+        <div class="slider-container">
+            <button class="slide-arrow prev-arrow" onclick="slideBlogs(-1)">&#8249;</button>
+            <div class="blogs-slider" id="blogsSlider">
+                <div class="blog-card">
+                    <img src="./assets/blog1.jpg" alt="Blog 1">
+                    <h3>Web Security Best Practices</h3>
+                    <p>Essential security practices for modern web applications...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <!-- Add more blog cards -->
+            </div>
+            <button class="slide-arrow next-arrow" onclick="slideBlogs(1)">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title2">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="./assets/email.png" alt="Email" class="icon">
+                    <h3>Email</h3>
+                    <p>your.email@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank">Connect with me</a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-color-1">Send Message</button>
+            </form>
+        </div>
+    </section>
 </body>
+
 </html>
