@@ -493,7 +493,7 @@ section {
 
 /* Projects Section Styles */
 #projects, #achievements {
-    padding: 8rem 2rem;
+    padding: 4rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
 }
