@@ -4,6 +4,8 @@ function toggleMenu() {
     const hamburgerIcon = document.querySelector('.hamburger-icon');
     menuLinks.classList.toggle('open');
     hamburgerIcon.classList.toggle('open');
+    console.log('Menu toggled');
+    
 }
 
 // Function to handle responsiveness for navigation
@@ -11,13 +13,13 @@ function handleMobileNav() {
     const desktopNav = document.getElementById('desktop-nav');
     const hamburgerNav = document.getElementById('hamburger-nav');
 
-    if (window.innerWidth <= 768) {
-        desktopNav.style.display = 'none';
-        hamburgerNav.style.display = 'flex';
-    } else {
-        desktopNav.style.display = 'flex';
-        hamburgerNav.style.display = 'none';
-    }
+    // if (window.innerWidth <= 768) {
+    //     desktopNav.style.display = 'none';
+    //     hamburgerNav.style.display = 'flex';
+    // } else {
+    //     desktopNav.style.display = 'flex';
+    //     hamburgerNav.style.display = 'flex';
+    // }
 }
 
 // Function to handle sliders (Projects and Blogs)

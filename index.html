@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratham Verma</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
@@ -31,13 +30,13 @@
     <nav id="hamburger-nav">
         <div class="logo">Pratham Verma</div>
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+            <div class="hamburger-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#about" onclick="toggleMenutoggleMenu()">About</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
@@ -59,7 +58,7 @@
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Pratham_verma_cv.pdf')">Download CV
                 </button>
-                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info
+                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact me
                 </button>
             </div>
             <div id="socials-container">
@@ -105,7 +104,7 @@
                     and IT fields.
                     particularly focusing on web security and network security.
                     </p>
-                    <p>
+                    <p id="about-text-additional">
                         My journey also includes contributing to cybersecurity knowledge through blogs, speaking at
                         events like DevFest 2k24, and excelling in hackathons, highlighting my commitment to innovation
                         and continuous learning.
@@ -332,18 +331,6 @@
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title2">Contact Me</h1>
         <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <img src="./assets/email.png" alt="Email" class="icon">
-                    <h3>Email</h3>
-                    <p>contactme.pratham@gmail.com</p>
-                </div>
-                <div class="contact-item">
-                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/pratham-verma-7685b8220/" target="_blank">Connect with me</a>
-                </div>
-            </div>
             <form class="contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
