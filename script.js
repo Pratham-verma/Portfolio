@@ -12,14 +12,6 @@ function toggleMenu() {
 function handleMobileNav() {
     const desktopNav = document.getElementById('desktop-nav');
     const hamburgerNav = document.getElementById('hamburger-nav');
-
-    // if (window.innerWidth <= 768) {
-    //     desktopNav.style.display = 'none';
-    //     hamburgerNav.style.display = 'flex';
-    // } else {
-    //     desktopNav.style.display = 'flex';
-    //     hamburgerNav.style.display = 'flex';
-    // }
 }
 
 // Function to handle sliders (Projects and Blogs)
