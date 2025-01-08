@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratham Verma</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ACoPLPhtjPUL2uD51",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -331,15 +341,14 @@
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title2">Contact Me</h1>
         <div class="contact-container">
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form class="contact-form" onsubmit="return sendMail(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn btn-color-1">Send Message</button>
             </form>
         </div>
     </section>
-    <script src="script.js"></script>
 </body>
 
 </html>

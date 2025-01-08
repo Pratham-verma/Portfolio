@@ -8,6 +8,42 @@ function toggleMenu() {
     
 }
 
+function sendMail(event) {
+    event.preventDefault();
+    
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_c25kzvj";
+    const templateID = "template_s12gdlp";
+
+    const submitButton = event.target.querySelector('button');
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("Your message sent successfully!!");
+            submitButton.disabled = false;
+            submitButton.textContent = 'Send Message';
+        })
+        .catch(err => {
+            console.log(err);
+            alert("Error sending message. Please try again.");
+            submitButton.disabled = false;
+            submitButton.textContent = 'Send Message';
+        });
+
+    return false; 
+}
+
 // Function to handle responsiveness for navigation
 function handleMobileNav() {
     const desktopNav = document.getElementById('desktop-nav');
