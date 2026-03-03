@@ -1,7 +1,3 @@
-/* ============================================
-   CYBERSECURITY COMMAND CENTER - SCRIPT
-   ============================================ */
-
 // --- Typing Animation for Hero Title (Variable Speed - Slow Decryption) ---
 const TYPING_ROLES = [
     'Cybersecurity Analyst',
