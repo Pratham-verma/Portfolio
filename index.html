@@ -17,6 +17,166 @@
             emailjs.init({ publicKey: "ACoPLPhtjPUL2uD51" });
         })();
     </script>
+
+    <!-- Custom Section Styles -->
+    <style>
+        /* ===== ACHIEVEMENTS & EVENTS SECTION ===== */
+        #achievements .achievements-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 1.5rem 1rem 0;
+        }
+
+        #achievements .achievements-frame {
+            position: relative;
+            width: 100%;
+            max-width: 1100px;          /* big but contained on large screens */
+            border: 1px solid rgba(0, 255, 157, 0.3);
+            border-radius: 12px;
+            padding: 10px;
+            background: rgba(10, 15, 20, 0.6);
+            box-shadow: 0 10px 40px rgba(0, 255, 157, 0.08);
+            transition: box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        #achievements .achievements-frame:hover {
+            border-color: rgba(0, 255, 157, 0.6);
+            box-shadow: 0 12px 48px rgba(0, 255, 157, 0.18);
+        }
+
+        #achievements .achievements-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 900px) {
+            #achievements .achievements-frame { max-width: 95%; padding: 8px; }
+        }
+
+        /* ===== COMPACT CERTIFICATIONS SECTION ===== */
+        #certifications .certs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding: 0 1rem;
+        }
+
+        #certifications .cert-card {
+            position: relative;
+            background: rgba(10, 15, 20, 0.85);
+            border: 1px solid rgba(0, 255, 157, 0.25);
+            border-radius: 10px;
+            padding: 1rem;
+            overflow: hidden;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        #certifications .cert-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 255, 157, 0.7);
+            box-shadow: 0 8px 24px rgba(0, 255, 157, 0.15);
+        }
+
+        #certifications .cert-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.6rem;
+            font-weight: 600;
+            color: #00ff9d;
+            background: rgba(0, 255, 157, 0.1);
+            border: 1px solid rgba(0, 255, 157, 0.4);
+            padding: 3px 8px;
+            border-radius: 3px;
+            letter-spacing: 0.05em;
+            z-index: 2;
+        }
+
+        /* Image container — keeps image fully visible, no cropping */
+        #certifications .cert-image-wrap {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            background: #0a0f14;
+            border: 1px solid rgba(0, 255, 157, 0.15);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+        }
+
+        #certifications .cert-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;   /* <-- ensures certificate image is fully visible */
+            display: block;
+        }
+
+        #certifications .cert-body {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            flex-grow: 1;
+        }
+
+        #certifications .cert-body h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #e6e6e6;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        #certifications .cert-body .cred-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: #8a8a8a;
+            word-break: break-all;
+            margin: 0;
+        }
+
+        #certifications .cert-verify {
+            display: inline-block;
+            margin-top: auto;
+            padding: 6px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #00ff9d;
+            text-decoration: none;
+            border: 1px solid #00ff9d;
+            border-radius: 4px;
+            text-align: center;
+            transition: background 0.25s ease, color 0.25s ease;
+            width: fit-content;
+        }
+
+        #certifications .cert-verify:hover {
+            background: #00ff9d;
+            color: #0a0f14;
+        }
+
+        @media (max-width: 600px) {
+            #certifications .certs-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 1rem;
+            }
+            #certifications .cert-body h3 { font-size: 0.85rem; }
+        }
+    </style>
 </head>
 
 <body>
@@ -34,7 +194,9 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#speaking">Public Speaking</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -53,7 +215,9 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#speaking" onclick="toggleMenu()">Public Speaking</a></li>
+                <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
                 <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -133,11 +297,11 @@
                     <div class="details-container">
                         <span class="decrypt-icon">[PROJ]</span>
                         <h3>Client Projects</h3>
-                        <p>50+ Projects</p>
+                        <p>60+ Projects</p>
                     </div>
                 </div>
                 <div class="text-container decrypt-text">
-                    <p>Security Analyst focused on Web, Mobile, and API security, I help organizations secure their most critical digital frontiers. Having conducted VAPT for 50+ client projects, I bring a hands-on, results-driven approach to vulnerability management.</p>
+                    <p>Security Analyst focused on Web, Mobile, and API security, I help organizations secure their most critical digital frontiers. Having conducted VAPT for 60+ client projects, I bring a hands-on, results-driven approach to vulnerability management.</p>
                     <p id="about-text-additional">I am also an active Public Speaker, having delivered 5+ sessions on emerging trends in Cybersecurity and AI Security. Whether through competing in hackathons or mentoring others through blogs. My approach combines offensive expertise with a commitment to continuous learning and community knowledge-sharing.</p>
                 </div>
             </div>
@@ -230,6 +394,17 @@
         </div>
     </section>
 
+    <!-- Achievements & Events -->
+    <section id="achievements">
+        <p class="section__text__p1">[MILESTONES_LOGGED]</p>
+        <h1 class="title2">Achievements & Events</h1>
+        <div class="achievements-wrap">
+            <div class="achievements-frame">
+                <img src="./assets/achievements.jpeg" alt="Achievements & Events" />
+            </div>
+        </div>
+    </section>
+
     <!-- Projects - 3D Cards -->
     <section id="projects">
         <p class="section__text__p1">[CLASSIFIED_FILES]</p>
@@ -295,6 +470,61 @@
         </div>
     </section>
 
+    <!-- Certifications - Compact Cards with Fully Visible Images -->
+    <section id="certifications">
+        <p class="section__text__p1">[VERIFIED_CREDENTIALS]</p>
+        <h1 class="title2">Certifications</h1>
+        <div class="certs-grid">
+            <div class="cert-card">
+                <div class="cert-badge">[VERIFIED]</div>
+                <div class="cert-image-wrap">
+                    <img src="./assets/cert1.png" alt="CEHv13 Certification">
+                </div>
+                <div class="cert-body">
+                    <h3>CEHv13</h3>
+                    <p class="cred-id">ID: ECC6084397512</p>
+                    <a class="cert-verify" href="https://drive.google.com/file/d/1Zc9NsA-Y2cHsh6tBqIyuXMgrALeREtO3/view?usp=sharing" target="_blank">Verify</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-badge">[VERIFIED]</div>
+                <div class="cert-image-wrap">
+                    <img src="./assets/cert2.png" alt="API Penetration Testing Certification">
+                </div>
+                <div class="cert-body">
+                    <h3>API Penetration Testing</h3>
+                    <p class="cred-id">ID: 284f4aa3-635f-45f5-94a4-05894854bddc</p>
+                    <a class="cert-verify" href="https://www.credly.com/badges/284f4aa3-635f-45f5-94a4-05894854bddc/public_url" target="_blank">Verify</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-badge">[VERIFIED]</div>
+                <div class="cert-image-wrap">
+                    <img src="./assets/cert3.png" alt="Google Cybersecurity Professional Certificate">
+                </div>
+                <div class="cert-body">
+                    <h3>Google Cybersecurity Professional V2</h3>
+                    <p class="cred-id">ID: 03c5a8fa-41fc-4a94-bdde-46a874900214</p>
+                    <a class="cert-verify" href="https://www.credly.com/badges/03c5a8fa-41fc-4a94-bdde-46a874900214/public_url" target="_blank">Verify</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-badge">[VERIFIED]</div>
+                <div class="cert-image-wrap">
+                    <img src="./assets/cert4.png" alt="Network Support & Security Certification">
+                </div>
+                <div class="cert-body">
+                    <h3>Network Support &amp; Security</h3>
+                    <p class="cred-id">ID: 6eb1fac0-e071-4cbf-b808-bd99f99d5d0b</p>
+                    <a class="cert-verify" href="https://www.credly.com/badges/6eb1fac0-e071-4cbf-b808-bd99f99d5d0b/public_url" target="_blank">Verify</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Blogs -->
     <section id="blogs">
         <p class="section__text__p1">[ENCRYPTED_STREAM]</p>
@@ -309,13 +539,13 @@
             <div class="blog-card feed-card">
                 <img src="./assets/blog7.png" alt="BurpSuite 101">
                 <h3>A Complete Guide to iOS Penetration Testing</h3>
-                <p>iOS devices are renowned for their robust security. Apple’s “walled garden” approach makes them a challenging target for penetration testers, but not an impenetrable one.</p>
+                <p>iOS devices are renowned for their robust security. Apple's "walled garden" approach makes them a challenging target for penetration testers, but not an impenetrable one.</p>
                 <a href="https://medium.com/@prathamverma.me/a-complete-guide-to-ios-penetration-testing-782f49cfa0e3" target="_blank" class="read-more">Read More</a>
             </div>
             <div class="blog-card feed-card">
                 <img src="./assets/blog8.png" alt="BurpSuite 101">
                 <h3>Clickjacking: The Invisible Threat Hiding in Plain Sight</h3>
-                <p>Clickjacking, also known as a “UI Redress Attack,” is a malicious technique where an attacker tricks you into clicking on something different from what you perceive.</p>
+                <p>Clickjacking, also known as a "UI Redress Attack," is a malicious technique where an attacker tricks you into clicking on something different from what you perceive.</p>
                 <a href="https://medium.com/@prathamverma.me/clickjacking-the-invisible-threat-hiding-in-plain-sight-bb9e18a014c6" target="_blank" class="read-more">Read More</a>
             </div>
             <div class="blog-card feed-card">
